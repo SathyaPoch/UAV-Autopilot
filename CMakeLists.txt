@@ -1,24 +1,25 @@
-cmake_minimum_required(VERSION 3.0.2)
-project(assembly_1_urdf)
+cmake_minimum_required(VERSION 3.8)
+project(assembly_1)
 
-find_package(catkin REQUIRED)
-catkin_package()
-# find_package(ament_cmake REQUIRED)
-# find_package(rclcpp REQUIRED)
-# find_package(std_msgs REQUIRED)
-# find_package(geometry_msgs REQUIRED)
+if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+  add_compile_options(-Wall -Wextra -Wpedantic)
+endif()
 
-# Install URDF and mesh files
+# find ros2 build dependencies
+find_package(ament_cmake REQUIRED)
+
 install(DIRECTORY
-  .
-  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
-  FILES_MATCHING PATTERN "*.urdf"
-  PATTERN "CMakeLists.txt" EXCLUDE
+  assembly_1/config
+  assembly_1/launch
+  assembly_1/meshes
+  assembly_1/urdf
+  assembly_1/world
+  DESTINATION share/${PROJECT_NAME}
 )
-
+# Optional
 install(FILES
   README.md
-  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
+  DESTINATION share/${PROJECT_NAME}
   OPTIONAL
 )
 
