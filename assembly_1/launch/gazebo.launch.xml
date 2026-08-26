@@ -25,4 +25,8 @@
   <!-- 6. Bridge Simulation Clock to ROS 2 -->
   <node pkg="ros_gz_bridge" exec="parameter_bridge" output="screen"
         args="/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock]"/>
+
+  <node pkg="ros_gz_bridge" exec="parameter_bridge" name="parameter_bridge">
+    <param name="config_file" value="$(find-pkg-share assembly_1)/config/controller.yaml"/>
+  </node>
 </launch>

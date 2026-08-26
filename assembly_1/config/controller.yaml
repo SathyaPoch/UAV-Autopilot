@@ -1,0 +1,9 @@
+- topic_name: "/clock"
+  gz_type_name: "gz.msgs.Clock"
+  ros_type_name: "rosgraph_msgs/msg/Clock"
+  direction: GZ_TO_ROS
+
+- topic_name: "/navsat"
+  gz_type_name: "ignition.msgs.NavSat"
+  ros_type_name: "sensor_msgs/msg/NavSatFix"
+  direction: GZ_TO_ROS
