@@ -33,7 +33,6 @@
       <topic>imu</topic>
     </sensor>
   </gazebo>
-<gazebo>
-    <plugin filename="gz-sim-imu-system" name="gz::sim::systems::Imu"/>
-</gazebo>
+<plugin name="gz::sim::systems::Imu"
+        filename="gz-sim-imu-system"/>
 </robot>

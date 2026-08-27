@@ -12,7 +12,7 @@
     <visual> 
       <geometry>
         <!-- the box around the drone -->
-        <box size="0.03 0.03 0.01"/> 
+        <box size="0.3 0.3 0.08"/> 
       </geometry>
     </visual>
     <inertial>
@@ -36,8 +36,9 @@
     <topic>navsat</topic>
   </sensor>
   </gazebo>
-<gazebo>
-  <plugin filename="gz-sim-imu-system" name="gz::sim::systems::Imu"/>
-</gazebo>
-
+ <plugin
+      filename="gz-sim-navsat-system"
+      name="gz::sim::systems::NavSat">
+  </plugin>
+  <mesh filename="package://assembly_1/meshes/Default.stl"/>
 </robot>

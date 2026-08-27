@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:macro name="quad_arm" params="name angle x y">
+    <link name="${name}">
+      <inertial>
+        <mass value="0.01"/>
+        <inertia ixx="1e-06" ixy="0" ixz="0" iyy="1e-06" iyz="0" izz="1e-06"/>
+      </inertial>
+      <visual>
+        <origin xyz="0.15 0 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.30 0.025 0.01"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0.15 0 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.30 0.025 0.01"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <joint name="${name}_joint" type="fixed">
+      <parent link="root"/>
+      <child link="${name}"/>
+      <origin xyz="${x} ${y} 0.05" rpy="0 0 ${angle}"/>
+    </joint>
+  </xacro:macro>
+
+  <xacro:macro name="px4_motor" params="motor_num direction x y z">
+    <link name="motor_${motor_num}_link">
+      <inertial>
+        <mass value="0.005"/>
+        <inertia ixx="9.75e-07" ixy="0" ixz="0" iyy="0.0001667" iyz="0" izz="0.0001676"/>
+      </inertial>
+      <visual>
+        <geometry><cylinder radius="0.05" length="0.02"/></geometry>
+      </visual>
+      <collision>
+        <geometry><cylinder radius="0.05" length="0.02"/></geometry>
+      </collision>
+    </link>
+
+    <joint name="motor_${motor_num}_joint" type="continuous">
+      <parent link="root"/>
+      <child link="motor_${motor_num}_link"/>
+      <origin xyz="${x} ${y} ${z}" rpy="0 0 0"/>
+      <axis xyz="0 0 1"/>
+    </joint>
+
+    <gazebo reference="motor_${motor_num}_link">
+      <plugin filename="gz-sim-multicopter-motor-model-system" name="gz::sim::systems::MulticopterMotorModel">
+        <jointName>motor_${motor_num}_joint</jointName>
+        <linkName>motor_${motor_num}_link</linkName>
+        <turningDirection>${direction}</turningDirection>
+        <timeConstantUp>0.0125</timeConstantUp>
+        <timeConstantDown>0.025</timeConstantDown>
+        <maxRotVelocity>1100</maxRotVelocity>
+        <motorConstant>8.54858e-06</motorConstant>
+        <momentConstant>0.06</momentConstant>
+        <commandSubTopic>/model/assembly_1/command/motor_speed</commandSubTopic>
+        <motorNumber>${motor_num}</motorNumber>
+        <actuator_number>${motor_num}</actuator_number>
+      </plugin>
+    </gazebo>
+  </xacro:macro>
+</robot>
