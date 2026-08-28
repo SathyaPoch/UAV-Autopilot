@@ -125,7 +125,7 @@
 
     <model name="canal">
       <static>true</static>
-      <pose>0 0 0.08 0 0 0</pose>
+      <pose>0 0 0.03 0 0 0</pose>
       <link name="water_link">
         <visual name="water_vis">
           <geometry>
