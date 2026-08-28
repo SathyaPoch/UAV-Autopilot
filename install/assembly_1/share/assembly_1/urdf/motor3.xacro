@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:include filename="$(find assembly_1)/urdf/actuator.xacro" />
+<!-- front left -->
+  <xacro:px4_motor motor_num="2" direction="cw" x="0.15" y="0.15" z="0.05" />
+</robot>
