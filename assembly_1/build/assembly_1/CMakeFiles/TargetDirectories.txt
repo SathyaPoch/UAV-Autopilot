@@ -1,9 +1,0 @@
-/home/pochsathya/workingdir/UAV-Autopilot/assembly_1/build/assembly_1/CMakeFiles/uninstall.dir
-/home/pochsathya/workingdir/UAV-Autopilot/assembly_1/build/assembly_1/CMakeFiles/assembly_1_uninstall.dir
-/home/pochsathya/workingdir/UAV-Autopilot/assembly_1/build/assembly_1/CMakeFiles/test.dir
-/home/pochsathya/workingdir/UAV-Autopilot/assembly_1/build/assembly_1/CMakeFiles/edit_cache.dir
-/home/pochsathya/workingdir/UAV-Autopilot/assembly_1/build/assembly_1/CMakeFiles/rebuild_cache.dir
-/home/pochsathya/workingdir/UAV-Autopilot/assembly_1/build/assembly_1/CMakeFiles/list_install_components.dir
-/home/pochsathya/workingdir/UAV-Autopilot/assembly_1/build/assembly_1/CMakeFiles/install.dir
-/home/pochsathya/workingdir/UAV-Autopilot/assembly_1/build/assembly_1/CMakeFiles/install/local.dir
-/home/pochsathya/workingdir/UAV-Autopilot/assembly_1/build/assembly_1/CMakeFiles/install/strip.dir
