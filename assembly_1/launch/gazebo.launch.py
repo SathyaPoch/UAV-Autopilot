@@ -10,12 +10,11 @@ def generate_launch_description():
     pkg_share = get_package_share_directory('assembly_1')
     
     world_path = os.path.join(pkg_share, 'world', 'rice_field.sdf')
-    xacro_file = os.path.join(pkg_share, 'urdf', 'assembly_1.urdf.xacro')
-
-    # Convert Xacro to Robot Description XML
+    xacro_file = os.path.join(pkg_share, 'urdf', 'assembly_1.sdf')
+    # why convert xacro to xml?
     robot_description = Command(['xacro ', xacro_file])
 
-    # 1. Start Gazebo Sim (ros_gz_sim) with the Rice Field World
+    # launch the worlds
     gazebo = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             os.path.join(get_package_share_directory('ros_gz_sim'), 'launch', 'gz_sim.launch.py')
@@ -29,7 +28,7 @@ def generate_launch_description():
         parameters=[{'robot_description': robot_description, 'use_sim_time': True}]
     )
 
-    spawn_drone = Node(
+    drone = Node(
         package='ros_gz_sim',
         executable='create',
         output='screen',
@@ -58,6 +57,6 @@ def generate_launch_description():
     return LaunchDescription([
         gazebo,
         robot_state_publisher,
-        spawn_drone,
+        drone,
         bridge
     ])

@@ -1,4 +1,4 @@
-<sdf version='1.11'>
+<sdf version='1.9'>
   <model name='assembly_1'>
     <link name='root'>
       <inertial>
@@ -112,6 +112,30 @@
     <plugin name='gz::sim::systems::Imu' filename='gz-sim-imu-system'/>
     <!-- <plugin filename="gz-sim-lift-drag-system" name="gz::sim::systems::LiftDrag">
     </plugin> -->
+    <!-- <plugin filename="libgz_mavlink_pin_bridge.so" name="gz::sim::systems::MavlinkPinBridge"> -->
+     <!-- port and hostname -->
+      <!-- <px4_hostname>127.0.0.1</px4_hostname>
+      <px4_port>14550</px4_port>
+      <commandSubTopic>/model/assembly_1/command/motor_speed</commandSubTopic>
+      <motorSpeedPubTopic>/model/assembly_1/motor_speed</motorSpeedPubTopic> -->
+    <!-- </plugin> -->
+    <plugin
+      filename="libgz_mavlink_pin_bridge"
+      name="gz::sim::systems::MavlinkPinBridge">
+      
+      <!-- Network target configuration for the Autopilot -->
+      <fcu_addr>127.0.0.1</fcu_addr>
+      <fcu_udp_port>14560</fcu_udp_port>
+      <connection_type>udp</connection_type>
+
+      <!-- Mapping sensor topics to the bridge -->
+      <imu_topic>/world/default/model/assembly_1/link/root/sensor/imu_sensor/imu</imu_topic>
+      <gps_topic>/world/default/model/assembly_1/link/root/sensor/gps_sensor/navsat</gps_topic>
+      
+      <!-- Actuator controls coming from the autopilot -->
+      <actuator_sub_topic>/model/assembly_1/command/motor_speed</actuator_sub_topic>
+    </plugin>
+
     <frame name='downward_camera_joint' attached_to='root'>
       <pose>0.10000000000000001 0 -0.050000000000000003 3.1415926535897931 1.5707926536359933 3.1415926535897931</pose>
     </frame>
