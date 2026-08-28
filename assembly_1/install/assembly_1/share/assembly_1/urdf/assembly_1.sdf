@@ -1,7 +1,7 @@
 <sdf version='1.9'>
   <model name='assembly_1'>
         <!-- <pose>0 0 10 0 0 0</pose> -->
-    <link name='root'>
+    <link name='base_link'>
       <inertial>
         <pose>0.0074766355140186919 0.00280373831775701 0.00046728971962616781 0 0 0</pose>
         <mass>1.0700000000000001</mass>

@@ -1,0 +1,17 @@
+cmake_minimum_required(VERSION 3.5)
+
+project(assembly_1)
+
+find_package(ament_cmake REQUIRED)
+
+install(
+  DIRECTORY
+    launch
+    urdf
+    meshes
+    config
+    world
+  DESTINATION share/${PROJECT_NAME}
+)
+
+ament_package()

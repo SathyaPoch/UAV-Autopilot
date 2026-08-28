@@ -1,0 +1,61 @@
+[0.009s] Invoking command in '/home/pochsathya/workingdir/UAV-Autopilot/assembly_1/build/assembly_1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/pochsathya/workingdir/UAV-Autopilot/assembly_1 -DCMAKE_INSTALL_PREFIX=/home/pochsathya/workingdir/UAV-Autopilot/assembly_1/install/assembly_1
+[0.063s] -- The C compiler identification is GNU 11.4.0
+[0.119s] -- The CXX compiler identification is GNU 13.4.0
+[0.125s] -- Detecting C compiler ABI info
+[0.194s] -- Detecting C compiler ABI info - done
+[0.197s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.197s] -- Detecting C compile features
+[0.197s] -- Detecting C compile features - done
+[0.199s] -- Detecting CXX compiler ABI info
+[0.258s] -- Detecting CXX compiler ABI info - done
+[0.262s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.262s] -- Detecting CXX compile features
+[0.262s] -- Detecting CXX compile features - done
+[0.264s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.464s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.548s] -- Configuring done
+[0.549s] -- Generating done
+[0.550s] -- Build files have been written to: /home/pochsathya/workingdir/UAV-Autopilot/assembly_1/build/assembly_1
+[0.553s] Invoked command in '/home/pochsathya/workingdir/UAV-Autopilot/assembly_1/build/assembly_1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/pochsathya/workingdir/UAV-Autopilot/assembly_1 -DCMAKE_INSTALL_PREFIX=/home/pochsathya/workingdir/UAV-Autopilot/assembly_1/install/assembly_1
+[0.554s] Invoking command in '/home/pochsathya/workingdir/UAV-Autopilot/assembly_1/build/assembly_1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/pochsathya/workingdir/UAV-Autopilot/assembly_1/build/assembly_1 -- -j32 -l32
+[0.579s] Invoked command in '/home/pochsathya/workingdir/UAV-Autopilot/assembly_1/build/assembly_1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/pochsathya/workingdir/UAV-Autopilot/assembly_1/build/assembly_1 -- -j32 -l32
+[0.586s] Invoking command in '/home/pochsathya/workingdir/UAV-Autopilot/assembly_1/build/assembly_1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/pochsathya/workingdir/UAV-Autopilot/assembly_1/build/assembly_1
+[0.590s] -- Install configuration: ""
+[0.590s] -- Installing: /home/pochsathya/workingdir/UAV-Autopilot/assembly_1/install/assembly_1/share/assembly_1/launch
+[0.590s] -- Installing: /home/pochsathya/workingdir/UAV-Autopilot/assembly_1/install/assembly_1/share/assembly_1/launch/gazebo.launch.xml
+[0.590s] -- Installing: /home/pochsathya/workingdir/UAV-Autopilot/assembly_1/install/assembly_1/share/assembly_1/launch/gazebo.launch.py
+[0.590s] -- Installing: /home/pochsathya/workingdir/UAV-Autopilot/assembly_1/install/assembly_1/share/assembly_1/urdf
+[0.591s] -- Installing: /home/pochsathya/workingdir/UAV-Autopilot/assembly_1/install/assembly_1/share/assembly_1/urdf/motor3.xacro
+[0.591s] -- Installing: /home/pochsathya/workingdir/UAV-Autopilot/assembly_1/install/assembly_1/share/assembly_1/urdf/assembly_1.urdf
+[0.591s] -- Installing: /home/pochsathya/workingdir/UAV-Autopilot/assembly_1/install/assembly_1/share/assembly_1/urdf/motor4.xacro
+[0.591s] -- Installing: /home/pochsathya/workingdir/UAV-Autopilot/assembly_1/install/assembly_1/share/assembly_1/urdf/assembly_1.sdf
+[0.591s] -- Installing: /home/pochsathya/workingdir/UAV-Autopilot/assembly_1/install/assembly_1/share/assembly_1/urdf/camera.xacro
+[0.591s] -- Installing: /home/pochsathya/workingdir/UAV-Autopilot/assembly_1/install/assembly_1/share/assembly_1/urdf/assembly_1.urdf.xacro
+[0.591s] -- Installing: /home/pochsathya/workingdir/UAV-Autopilot/assembly_1/install/assembly_1/share/assembly_1/urdf/gps.xacro
+[0.591s] -- Installing: /home/pochsathya/workingdir/UAV-Autopilot/assembly_1/install/assembly_1/share/assembly_1/urdf/motor2.xacro
+[0.591s] -- Installing: /home/pochsathya/workingdir/UAV-Autopilot/assembly_1/install/assembly_1/share/assembly_1/urdf/motor1.xacro
+[0.591s] -- Installing: /home/pochsathya/workingdir/UAV-Autopilot/assembly_1/install/assembly_1/share/assembly_1/urdf/actuator.xacro
+[0.591s] -- Installing: /home/pochsathya/workingdir/UAV-Autopilot/assembly_1/install/assembly_1/share/assembly_1/urdf/imu.xacro
+[0.591s] -- Installing: /home/pochsathya/workingdir/UAV-Autopilot/assembly_1/install/assembly_1/share/assembly_1/meshes
+[0.591s] -- Installing: /home/pochsathya/workingdir/UAV-Autopilot/assembly_1/install/assembly_1/share/assembly_1/meshes/Default.stl
+[0.592s] -- Installing: /home/pochsathya/workingdir/UAV-Autopilot/assembly_1/install/assembly_1/share/assembly_1/config
+[0.592s] -- Installing: /home/pochsathya/workingdir/UAV-Autopilot/assembly_1/install/assembly_1/share/assembly_1/config/controller.yaml
+[0.592s] -- Installing: /home/pochsathya/workingdir/UAV-Autopilot/assembly_1/install/assembly_1/share/assembly_1/config/flight_controller.yaml
+[0.592s] -- Installing: /home/pochsathya/workingdir/UAV-Autopilot/assembly_1/install/assembly_1/share/assembly_1/world
+[0.592s] -- Installing: /home/pochsathya/workingdir/UAV-Autopilot/assembly_1/install/assembly_1/share/assembly_1/world/rice_field.sdf
+[0.592s] -- Installing: /home/pochsathya/workingdir/UAV-Autopilot/assembly_1/install/assembly_1/share/ament_index/resource_index/package_run_dependencies/assembly_1
+[0.592s] -- Installing: /home/pochsathya/workingdir/UAV-Autopilot/assembly_1/install/assembly_1/share/ament_index/resource_index/parent_prefix_path/assembly_1
+[0.593s] -- Installing: /home/pochsathya/workingdir/UAV-Autopilot/assembly_1/install/assembly_1/share/assembly_1/environment/ament_prefix_path.sh
+[0.593s] -- Installing: /home/pochsathya/workingdir/UAV-Autopilot/assembly_1/install/assembly_1/share/assembly_1/environment/ament_prefix_path.dsv
+[0.593s] -- Installing: /home/pochsathya/workingdir/UAV-Autopilot/assembly_1/install/assembly_1/share/assembly_1/environment/path.sh
+[0.593s] -- Installing: /home/pochsathya/workingdir/UAV-Autopilot/assembly_1/install/assembly_1/share/assembly_1/environment/path.dsv
+[0.593s] -- Installing: /home/pochsathya/workingdir/UAV-Autopilot/assembly_1/install/assembly_1/share/assembly_1/local_setup.bash
+[0.593s] -- Installing: /home/pochsathya/workingdir/UAV-Autopilot/assembly_1/install/assembly_1/share/assembly_1/local_setup.sh
+[0.593s] -- Installing: /home/pochsathya/workingdir/UAV-Autopilot/assembly_1/install/assembly_1/share/assembly_1/local_setup.zsh
+[0.593s] -- Installing: /home/pochsathya/workingdir/UAV-Autopilot/assembly_1/install/assembly_1/share/assembly_1/local_setup.dsv
+[0.593s] -- Installing: /home/pochsathya/workingdir/UAV-Autopilot/assembly_1/install/assembly_1/share/assembly_1/package.dsv
+[0.593s] -- Installing: /home/pochsathya/workingdir/UAV-Autopilot/assembly_1/install/assembly_1/share/ament_index/resource_index/packages/assembly_1
+[0.593s] -- Installing: /home/pochsathya/workingdir/UAV-Autopilot/assembly_1/install/assembly_1/share/assembly_1/cmake/assembly_1Config.cmake
+[0.593s] -- Installing: /home/pochsathya/workingdir/UAV-Autopilot/assembly_1/install/assembly_1/share/assembly_1/cmake/assembly_1Config-version.cmake
+[0.593s] -- Installing: /home/pochsathya/workingdir/UAV-Autopilot/assembly_1/install/assembly_1/share/assembly_1/package.xml
+[0.594s] Invoked command in '/home/pochsathya/workingdir/UAV-Autopilot/assembly_1/build/assembly_1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/pochsathya/workingdir/UAV-Autopilot/assembly_1/build/assembly_1

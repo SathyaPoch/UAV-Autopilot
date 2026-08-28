@@ -23,7 +23,7 @@
     </collision>
   </link>
   <joint name="gps_joint" type="fixed">
-    <!-- the base of the drone or the component that the gps link attched to -->
+    <!-- the root of the drone or the component that the gps link attched to -->
     <parent link="base_link"/>
     <!-- the gps link  -->
     <child link="gps"/>
